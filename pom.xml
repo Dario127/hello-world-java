@@ -13,14 +13,21 @@
   <description>The most basic of Java programs.</description>
   <url>https://www.coveros.com/</url>
   <inceptionYear>2018</inceptionYear>
-  
+
+    <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+  </dependencies>
  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <jdk.version>1.8</jdk.version>
 
-    <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+    <maven.compiler.plugin.version>3.9.4</maven.compiler.plugin.version>
   </properties>
 
   <build>
@@ -28,9 +35,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <configuration>
-         <failOnMissingWebXml>false</failOnMissingWebXml>
-        </configuration>
+         <version>3.9.4</version>
       </plugin>
     </plugins>
   </build>
